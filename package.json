@@ -1,38 +1,35 @@
 {
   "name": "deckgl-tilelayer-issue",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start-local": "webpack-dev-server --env.local --progress --hot --open",
+    "start": "webpack-dev-server --progress --hot --open"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@deck.gl/core": "^8.6.9",
+    "@deck.gl/extensions": "^8.6.9",
+    "@deck.gl/geo-layers": "^8.6.9",
+    "@deck.gl/layers": "^8.6.9",
+    "@deck.gl/mesh-layers": "^8.6.9",
+    "@deck.gl/react": "^8.6.9",
+    "@loaders.gl/core": "3.2.0",
+    "@loaders.gl/images": "^3.0.0",
+    "@loaders.gl/gltf": "^3.0.0",
+    "@luma.gl/engine": "^8.4.0",
+    "@luma.gl/gltools": "^8.4.0",
+    "@luma.gl/shadertools": "^8.4.0",
+    "@luma.gl/webgl": "^8.4.0",
+    "math.gl": "^3.5.7",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.1"
   }
 }
