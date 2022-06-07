@@ -19,13 +19,13 @@ const CONFIG = {
         // Remove if your app does not use JSX or you don't need to support old browsers
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: [/node_modules/],
+        // exclude: [/node_modules/],
         options: {
           presets: ['@babel/preset-react']
         }
       }
     ]
-  }
+  },
 };
 
 // This line enables bundling against src in this repo rather than installed module
